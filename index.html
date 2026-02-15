@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jalraksha – GenAI Disaster Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌊 Jalraksha – AI Flood Alert & SOS System</h1>
+
+<!-- SEARCH LOCATION -->
+<div class="box">
+  <h3>📍 Search Location</h3>
+  <input type="text" id="placeInput" placeholder="Enter city or place name">
+  <button onclick="searchPlace()">Search</button>
+  <div class="output" id="locationResult"></div>
+</div>
+
+<!-- CURRENT LOCATION -->
+<div class="box">
+  <h3>📡 Detect Current Location</h3>
+  <button onclick="getLocation()">Use My Location</button>
+  <div class="output" id="currentLocation"></div>
+</div>
+
+<!-- RAINFALL + PREDICTION -->
+<div class="box">
+  <h3>🌧️ Rainfall & Flood Prediction</h3>
+  <button onclick="predictFlood()">Predict Risk</button>
+  <div class="output" id="predictionResult"></div>
+</div>
+
+<!-- AI ALERT -->
+<div class="box">
+  <h3>⚠️ AI Safety Alert</h3>
+  <button onclick="generateAlert()">Generate Alert</button>
+  <div class="output" id="alertResult"></div>
+</div>
+
+<!-- MULTI LANGUAGE -->
+<div class="box">
+  <h3>🌐 Multilingual Alert</h3>
+  <select id="language">
+    <option value="en">English</option>
+    <option value="hi">Hindi</option>
+    <option value="as">Assamese</option>
+  </select>
+  <button onclick="translateAlert()">Translate</button>
+  <div class="output" id="langResult"></div>
+</div>
+
+<!-- SOS -->
+<div class="box sos">
+  <h3>🚨 SOS Emergency</h3>
+  <button onclick="sendSOS()">SEND SOS</button>
+  <div class="output" id="sosResult"></div>
+</div>
+
+<!-- AI CHAT -->
+<div class="box">
+  <h3>🤖 Ask Jalraksha AI</h3>
+  <input type="text" id="userQuestion" placeholder="Is my area safe?">
+  <button onclick="aiChat()">Ask</button>
+  <div class="output" id="chatResult"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
